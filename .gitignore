@@ -1,47 +1,86 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Project specific fileS
+/**/node_modules/
+/**/bower_components/
+/**/dist/
+/**/.tmp/
+/**/.sass-cache/
+/**/.tsbuild/
+/**/coverage/
+/**/typings
+/**/_references.js
 
-# Folder config file
-Desktop.ini
+git #Git junk
+*.orig
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+#Project Rider files
+**/.idea
+**/.idea*
 
-# Windows shortcuts
-*.lnk
+#Visual Studio files
+/**/project.lock.json
+.vs
+*.[Oo]bj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.opensdf
+*.unsuccessfulbuild
+ipch/
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+artifacts/*
+Ankh.NoLoad
 
-# =========================
-# Operating System Files
-# =========================
+#MonoDevelop
+*.pidb
+*.userprefs
 
-# OSX
-# =========================
+#Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
 
-.DS_Store
-.AppleDouble
-.LSOverride
+#Project files
+[Bb]uild/
 
-# Thumbnails
-._*
+#Subversion files
+.svn
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
+# Office Temp Files
+~$*
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+#NuGet
+packages/
+
+#ncrunch
+*ncrunch*
+*crunch*.local.xml
+
+# visual studio database projects
+*.dbmdl
+
+#Test files
+*.testsettings
+
+#testsettings

@@ -1,0 +1,17 @@
+﻿<button type="button" ng-click="addMovie()" class="btn btn-primary">
+    Add Movie
+</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="movie in movies">
+            <td>{{movie.Id}}</td>
+            <td>{{movie.Title}}</td>
+        </tr>
+    </tbody>
+</table>

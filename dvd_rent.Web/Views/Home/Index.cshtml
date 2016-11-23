@@ -1,0 +1,31 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="Example">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body ng-controller="ApplicationController">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#rentmovie">Rent</a>
+                <a class="navbar-brand" href="#getbackmovie">Get back</a>
+                <a class="navbar-brand" href="#clients">Clients</a>
+                <a class="navbar-brand" href="#movies">Movies</a>
+                <a class="navbar-brand" href="#moviescopies">Copies</a>
+                <a class="navbar-brand" href="#moviescopyclient">Client Copies</a>
+            </div>
+        </nav>
+        <div ui-view></div>
+    </div>
+    @Scripts.Render("~/bundles/libs")
+    @Scripts.Render("~/bundles/app")
+</body>
+</html>

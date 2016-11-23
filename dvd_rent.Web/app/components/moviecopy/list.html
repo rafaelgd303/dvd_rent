@@ -1,0 +1,27 @@
+﻿<button type="button" ng-click="addMovieCopy()" class="btn btn-primary">
+    Add Movie Copy
+</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Serial number</th>
+            <!--<th>Movie Id</th>-->
+            <th>Title</th>
+            <th>Buy date</th>
+            <th>Trash date</th>
+            <th>On Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="movieCopy in moviesCopies">
+            <td>{{movieCopy.Id}}</td>
+            <td>{{movieCopy.SerialNumber}}</td>
+            <!--<td>{{movieCopy.MovieId}}</td>-->
+            <td>{{movieCopy.Title}}</td>
+            <td>{{movieCopy.BuyDate | date:'MM/dd/yyyy h:mma'}}</td>
+            <td>{{movieCopy.TrashDate | date:'MM/dd/yyyy h:mma'}}</td>
+            <td>{{movieCopy.IsOnStock}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,20 @@
+﻿<table class="table">
+    <thead>
+        <tr>
+            <th>Full name</th>
+            <th>Title</th>
+            <th>Serial</th>
+            <th>Rent date</th>
+            <th>Back date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="movieCopyClient in moviesCopyClient">
+            <td>{{movieCopyClient.FirstName + ' ' + movieCopyClient.LastName}}</td>
+            <td>{{movieCopyClient.Title}}</td>
+            <td>{{movieCopyClient.SerialNumber}}</td>
+            <td>{{movieCopyClient.TakeDate | date:'MM/dd/yyyy h:mma'}}</td>
+            <td>{{movieCopyClient.BackDate | date:'MM/dd/yyyy h:mma'}}</td>
+        </tr>
+    </tbody>
+</table>

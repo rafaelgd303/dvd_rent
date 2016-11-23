@@ -1,0 +1,28 @@
+﻿<form role="form" name="rentMovieForm">
+    <h4>Rent movie</h4>
+    <div class="form-group">
+        <label>Select Movie (search by title or copy serial number)</label>
+        <select class="form-control select2"
+                id="moviesList"
+                name="moviesList"
+                ng-model="model.movieId"
+                ng-model-options="{ debounce: 500 }"
+                style="width: 100%;"
+                required></select>
+    </div>
+
+    <div class="form-group">
+        <label>Select Client</label>
+        <select class="form-control select2"
+                id="clientsList"
+                name="clientsList"
+                ng-model="model.clientId"
+                ng-model-options="{ debounce: 500 }"
+                style="width: 100%;"
+                required></select>
+    </div>
+
+    <button type="button" ng-click="rent()" class="btn btn-primary">
+        Rent movie
+    </button>
+</form>

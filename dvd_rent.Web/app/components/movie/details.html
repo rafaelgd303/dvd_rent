@@ -1,0 +1,11 @@
+﻿<form role="form" name="movieForm">
+    <h4>Add movie</h4>
+    <div class="form-group" ng-class="{'has-error':movieForm.title.$invalid}">
+        <label>Select Client</label>
+        <input class="form-control" name="title" ng-model="model.title" required />
+    </div>
+
+    <button type="button" ng-disabled="movieForm.$invalid" ng-click="save()" class="btn btn-primary">
+        Save
+    </button>
+</form>
